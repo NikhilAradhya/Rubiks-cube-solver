@@ -3,18 +3,12 @@
 #include <string.h>
 #include <Stepper.h>
 
-
-
-
-
 int boolvar=0;
 String finalCode = "";
 String s1 = "";
 int ame=0;
 
-
 const int stepsPerRevolution = 40;
-
 
 Stepper myStepper1(stepsPerRevolution, 8, 9, 10, 11);
 Stepper myStepper2(stepsPerRevolution, 4, 5, 6, 7);
@@ -24,6 +18,7 @@ Stepper myStepper5(stepsPerRevolution, 38, 39, 40, 41);
 Stepper myStepper6(stepsPerRevolution, 32, 33, 34, 35);
 
 void setup() {
+  
   // set the speed at 60 rpm:
   myStepper1.setSpeed(40);
   myStepper2.setSpeed(40);
@@ -33,19 +28,7 @@ void setup() {
   myStepper6.setSpeed(40);
   // initialize the serial port:
   Serial.begin(9600);
-
-
-
-
-
-
-
-
-
-Serial.begin(9600);
-
-
-
+  
 void tperm();
 void parityfn();
 void yperm();
@@ -71,13 +54,6 @@ void st4(int angle);
 void st5(int angle);
 void st6(int angle);
 void rotate(int a);
-
-
-
-
-
-Serial.println("helloworld\n");
-
 
     int flag_AM=1, flag_BI=1, flag_CE=1, flag_DQ=1, flag_FL=1, flag_HR=1, flag_JP=1, flag_KV=1, flag_NT=1, flag_OW=1, flag_SY=1;
 
@@ -1818,14 +1794,10 @@ void stringprocessing()
              stringprocessing_FB();
              stringprocessing_BF();
 
-
-
 //ami=34;
 
 
 }
-
-
 
 
 void stringprocessing_R(){
@@ -1851,8 +1823,6 @@ void stringprocessing_R(){
       else if(s1.charAt(i+1)=='r'){temp_i1=1;}
       else if(s1.charAt(i+1)=='S') {temp_i1=2;}
       else{temp_i1=0;}
-
-
 
 
       temp = temp_i + temp_i1;
