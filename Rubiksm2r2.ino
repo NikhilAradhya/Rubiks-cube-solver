@@ -1,3 +1,7 @@
+/*This is Arduino MEGA code for M2/R2 algorithms.
+I have also written the stepper motor interfacing part for 6 stepper motors.*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
