@@ -1,4 +1,4 @@
-# optimal-logic
+# Rubiks cube solver
 Hey, I love logic...
 
 Come on, lets make a Rubik's cube solver from scratch!!, This will surely be a treat for all cuboholics and programming minds!!
